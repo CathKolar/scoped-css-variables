@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#50a0fe">
+  </div>
+
+  <img id="output" width="600" src="src/robin-cross-uUROWXBqEPE-unsplash (1).jpg"/>
+  <input type="file" id="file" accept="image/*" name="image" onchange="loadFile(event)">
+  <label class="file" for="file">Try your own photo</label>
+ 
+  <footer>👩‍💻 Coded by <a href="https://github.com/CathKolar" target="blank" >Catherine Kolar</a></footer>
+
+  
+
+  <script src="src/index.js"></script>
+
+</body>
+</html>

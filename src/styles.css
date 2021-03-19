@@ -1,0 +1,77 @@
+:root {
+  --base: #50a0fe;
+  --spacing: 10px;
+  --blur: 0px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  margin-bottom: 20px;
+}
+.hl {
+  color: var(--base);
+}
+/*
+      misc styles, nothing to do with CSS variables
+    */
+
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+footer {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 20px;
+}
+a {
+  color: white;
+  transition: all 300ms ease-in;
+  font-size: 20px;
+}
+a:hover {
+  color: #50a0fe;
+
+  font-weight: bolder;
+  font-size: 25px;
+}
+a:visited {
+  color: (#50a0fe);
+}
+input[type="file"] {
+  display: none;
+}
+label[class="file"] {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: medium;
+  font-weight: 400;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px rgba(255, 255, 255, 0.3);
+  background-color: #f5af09;
+  transition: 0.3s ease-in;
+}
+label[class="file"]:hover {
+  background-color: white;
+  color: #f5af09;
+  box-shadow: 0px 1px 6px rgba(245, 175, 9, 0.3);
+}
